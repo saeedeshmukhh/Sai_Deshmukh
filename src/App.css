@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar a:hover {
+  color: #357ABD;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #f2f7ff, #e0eafc);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.hero {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  border: 4px solid #4a90e2;
+  margin-bottom: 20px;
+}
+
+.links a {
+  display: inline-block;
+  margin: 10px 8px;
+  padding: 10px 15px;
+  text-decoration: none;
   color: white;
+  background-color: #4a90e2;
+  border-radius: 8px;
+  transition: background 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.links a:hover {
+  background-color: #357ABD;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Projects section */
+.projects-section {
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.projects-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.project-card h3 {
+  margin: 0 0 10px;
+}
+
+.project-card p {
+  margin: 0 0 15px;
+  color: #333;
+}
+
+.project-card a {
+  color: #4a90e2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    padding: 30px 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .profile-pic {
+    width: 100px;
   }
+
+  .links a {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .projects-section h2 {
+    font-size: 24px;
+  }
+
+  .project-card h3 {
+    font-size: 18px;
+  }
+}
+
+.about-section {
+  background: #ffffff;
+  padding: 40px;
+  max-width: 800px;
+  margin: 60px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.contact-section {
+  background: #f7f9fb;
+  padding: 40px;
+  max-width: 800px;
+  margin: 60px auto;
+  border-radius: 12px;
+  text-align: center;
 }
