@@ -1,5 +1,7 @@
 import projects from './data/projects';
 import './App.css';
+import myImg from './assets/me.jpeg';
+
 
 function App() {
   return (
@@ -10,7 +12,7 @@ function App() {
       <a href="#contact">Contact</a>
     </div><div className="container">
         <div id="hero" className="hero">
-          <img src="/me.jpeg" alt="Sai Deshmukh" className="profile-pic" />
+          <img src={myImg} alt="Sai Deshmukh" className="profile-pic" />
           <h1>Hi, I'm Sai Deshmukh 👋</h1>
           <p>Aspiring Software Engineer | Web & AI Enthusiast</p>
           <div className="links">
